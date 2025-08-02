@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #000000;
+}
+
+/* Navbar */
+.Navbar_Edit {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 50% !important;
+    height: 32% !important;
+    border-radius: 20px 0px 5px 20px !important;
+}
+
+@media (max-width:991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* Logo */
+.image_logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Navbar Links */
+.link_in_nav {
+    color: wheat;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0;
+}
+
+.link_in_nav::after {
+    content: "";
+    position: absolute;
+    background-color: #C9B06C;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    border-radius: 25%;
+    transition: 0.3s;
+    text-shadow: #C9B06C 4px 5px 40px;
+}
+
+.link_in_nav:hover::after {
+    width: 100%;
+}
+
+.link_in_nav:hover {
+    color: #C9B06C;
+    text-shadow: #C9B06C 4px 5px 40px;
+}
+
+/* Navbar logo image */
+.image_nav_bar {
+    height: 40px;
+    width: 100px;
+}
+
+/* -------------------- الحركة -------------------- */
+@keyframes shakeUpDown {
+    0% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    25% {
+        transform: rotate(45deg) translateY(-5px);
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    75% {
+        transform: rotate(45deg) translateY(5px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+/* صورة المعين المتحركة */
+.wrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    border: 5px solid gold;
+    box-shadow: 0 0 20px gold;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: shakeUpDown 2s ease-in-out infinite;
+}
+
+/* الصورة داخل المعين */
+.home__blob-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transform: rotate(-45deg);
+}
+
+/* النص */
+.span_im {
+    color: rgba(255, 215, 0, 0.7);
+}
+
+.pesonal_name {
+    color: rgba(255, 215, 0, 0.7);
+    font-size: 40px;
+    font-style: bold;
+    margin-top: 20px;
+    text-shadow: rgba(255, 215, 0, 0.8) 4px 5px 40px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-style: bold;
+    margin-top: 20px;
+}
+
+.pargr_home {
+    width: 80%;
+    color: white;
+}
+
+/* أيقونات السوشال ميديا */
+.social {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.links {
+    display: block;
+    font-size: x-large;
+    color: #21232C;
+    padding: 2px 7px 5px 7px;
+    background-color: rgba(255, 215, 0, 0.7);
+    border-radius: 55% 45% 48% 52% / 27% 29% 71% 73%;
+    border: solid rgba(255, 215, 0, 0.7);
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.links:hover {
+    transform: translateY(-10px);
+    text-shadow: rgba(255, 215, 0, 0.7);
+}
+
+/* ميديا تكست */
+@media (max-width:600px) {
+    .text_home {
+        padding-left: 50px;
+        margin-top: 10px;
+    }
+
+    .text_about {
+        padding-left: 50px;
+        margin-top: 10px;
+    }
+
+    .links {
+        padding: 0px 5px 5px 5px;
+        font-size: large;
+    }
+}
+
+@media (max-width:450px) {
+    .pesonal_name {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    .pargr_home {
+        font-size: small;
+    }
+}
+
+@media (max-width:991px) {
+    .links {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 220px;
+        height: 220px;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .text_home {
+        text-align: center !important;
+    }
+
+    .pargr_home {
+        width: 100%;
+        text-align: justify;
+    }
+}
