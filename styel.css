@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('font/ExpoArabic-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Poppins";
+    font-family: 'Expo Arabic', sans-serif;
 }
 
 body {
+
     background-color: #000000;
 }
 
@@ -228,4 +238,33 @@ h3 {
         width: 100%;
         text-align: justify;
     }
+}
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-3px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    75% {
+        transform: translateY(-2px);
+    }
+}
+
+.links {
+    display: inline-block;
+    animation: shake 2s infinite ease-in-out;
+    transition: transform 0.3s;
+    font-size: 1.5rem;
+
+    /* يمكنك تغييره حسب التنسيق */
+    margin: 0 8px;
 }
