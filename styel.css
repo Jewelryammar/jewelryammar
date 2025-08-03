@@ -201,7 +201,7 @@ h3 {
         font-size: large;
     }
     .location{
-            font-size: larger;
+        font-size: 22px;
     }
 }
 
@@ -217,8 +217,8 @@ h3 {
     .pargr_home {
         font-size: small;
     }
-           .location {
-               font-size: larger;
+    .location {
+            font-size: 22px;
            }
 }
 
@@ -226,6 +226,9 @@ h3 {
     .links {
         margin-left: 10px;
     }
+         .location {
+             font-size: 22px;
+         }
 }
 
 @media (max-width: 768px) {
@@ -253,7 +256,7 @@ h3 {
         text-align: center !important;
     }
            .location {
-               font-size: larger;
+            font-size: 22px;
            }
 }
 @keyframes shake {
@@ -289,8 +292,7 @@ h3 {
 .location {
     display: inline-block;
     animation: shake 2s infinite ease-in-out;
-    transition: transform 0.3s;
-    font-size: 1.5rem;
+font-size: 22px;
  color: rgba(255, 215, 0, 0.7);
 text-shadow: rgba(255, 215, 0, 0.7);
     /* يمكنك تغييره حسب التنسيق */
