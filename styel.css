@@ -138,16 +138,32 @@ body {
 .pesonal_name {
     color: rgba(255, 215, 0, 0.7);
     font-size: 100px;
-    font-style: bold;
+    font-style: bold !important;
     margin-top: 20px;
     text-shadow: rgba(255, 215, 0, 0.8) 4px 5px 40px;
     text-align: center;
 }
 
+h4 {
+    color: white;
+    /* font-style: bold; */
+    margin-top: 10px;
+    text-align: center;
+    font-size: large;
+
+}
+h2 {
+    color: white;
+    font-style: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size:25px;
+}
 h3 {
     color: white;
     font-style: bold;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 .pargr_home {
