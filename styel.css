@@ -298,3 +298,12 @@ text-shadow: rgba(255, 215, 0, 0.7);
     /* يمكنك تغييره حسب التنسيق */
     margin: 0 8px;
 }
+@media screen and (max-width: 397px) {
+    .location {
+        font-size: 18px;
+        color: rgba(255, 215, 0, 0.7);
+        text-shadow: rgba(255, 215, 0, 0.7);
+    }
+
+ 
+}
